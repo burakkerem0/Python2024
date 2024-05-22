@@ -32,7 +32,7 @@ point = 0
 print("Please write that words meaning.")
 for word in word_list:
     users_input = input(word + " : ")
-    if users_input.lower() == word_list[words]:
+    if users_input.lower() == word_list[word]:
         point += 5
         print("Congrats! You're points is: " , point)
     else:
