@@ -30,8 +30,8 @@ word_list = {
 }
 point = 0 
 print("Please write that words meaning.")
-for words in word_list:
-    users_input = input(words + " : ")
+for word in word_list:
+    users_input = input(word + " : ")
     if users_input.lower() == word_list[words]:
         point += 5
         print("Congrats! You're points is: " , point)
