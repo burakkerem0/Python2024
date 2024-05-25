@@ -1,25 +1,27 @@
-import datetime
-users=[]
-
+infos = []
 while True:
-    name=input("Write your name: ")
-    surname=input("Write your surname: ")
-    birthday=input("What is your birthday year: ")
-    todays_date=datetime.date.today()
-    age=todays_date.year - int(birthday)
-    user={"Name":name,
-          "Surname": surname,
-          "Birthday":birthday,
-          "Age":age}
-    users.append(user)
-    print(users)
-    decision = input("To continue press Enter, To finish press q: ")
-    if decision == "q":
-        break
-    else:
-        continue
-print(users)
-     
+
+    name = input("Adınızı giriniz: ")
+    surname = input("Soyadınızı giriniz: ")
+    job = input("Mesleğinizi giriniz:")
+    birthday = input("Doğum yılınızı giriniz: ")
+
+
+    if name =="q" or surname == "q" or job == "q" or birthday == "q":
+         break
+
+    import datetime
+    today = datetime.date.today().year
+    age = bugun- int(birthday)
+
+    users_dict={"ad": name, 
+                            "soyad": surname, 
+                            "meslek": job,
+                            "yas": age }
+
+    infos.append(users_dict)
+    print(infos)   
+
 
 
  
