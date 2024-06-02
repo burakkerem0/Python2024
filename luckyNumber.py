@@ -40,7 +40,6 @@ int_number_in_birthday = []
 for number in birthday:
     if number.isdigit():
         int_number_in_birthday.append(int(number))
-print(int_number_in_birthday)
 
 times_3 = list(filter(lambda x: x%3 == 0, int_number_in_birthday))
 
