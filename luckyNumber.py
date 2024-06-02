@@ -35,7 +35,6 @@ consonant_letters = total_letters_count - total_wovel_sound_count - space_chract
 
 
 # get birthday and finding times of 3
-birthday_list = []
 int_number_in_birthday = []
 for number in birthday:
     if number.isdigit():
